@@ -1,3 +1,5 @@
+package lesson3;
+
 public class Node {
     private Object value;
     private Node next;
