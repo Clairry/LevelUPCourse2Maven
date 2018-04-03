@@ -20,7 +20,7 @@ public class App {
     }
 
     public static void main(String[] args) throws SQLException {
-        PropertiesJdbcConfiguration confProperties=new PropertiesJdbcConfiguration();
+        JdbcConfiguration confProperties=new PropertiesJdbcConfiguration();
         Configuration conf=new Configuration();
         conf=confProperties.load();
         Department dep_example;

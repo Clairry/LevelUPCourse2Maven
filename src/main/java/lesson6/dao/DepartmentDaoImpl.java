@@ -10,9 +10,6 @@ public class DepartmentDaoImpl implements DepartmentDao {
 
     Connection connection;
 
-    public DepartmentDaoImpl() {
-    }
-
     public DepartmentDaoImpl(Connection connection) {
         this.connection = connection;
     }

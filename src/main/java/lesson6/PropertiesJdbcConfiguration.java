@@ -14,10 +14,10 @@ public class PropertiesJdbcConfiguration implements JdbcConfiguration {
             while ((confLine = confReader.readLine())!=null) {
                 tokens=confLine.split("=");
                 if (tokens[0].equals("jdbc.database.name")) {configurationImpl.setDatabase(tokens[1]);}
-                if (tokens[0].equals("jdbc.host")) {configurationImpl.setHost(tokens[1]);}
-                if (tokens[0].equals("jdbc.port")) {configurationImpl.setPort(tokens[1]);}
-                if (tokens[0].equals("jdbc.username")) {configurationImpl.setUsername(tokens[1]);}
-                if (tokens[0].equals("jdbc.password")) {configurationImpl.setPassword(tokens[1]);}
+                else if (tokens[0].equals("jdbc.host")) {configurationImpl.setHost(tokens[1]);}
+                else if (tokens[0].equals("jdbc.port")) {configurationImpl.setPort(tokens[1]);}
+                else if (tokens[0].equals("jdbc.username")) {configurationImpl.setUsername(tokens[1]);}
+                else if (tokens[0].equals("jdbc.password")) {configurationImpl.setPassword(tokens[1]);}
             }
         }
         catch (IOException e) {
